@@ -17,21 +17,45 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #34495e;
+    border-radius: 5px;
 }
 
 .section {
-    padding: 40px;
+    padding: 40px 20px;
     text-align: center;
+}
+
+.home-section {
+    background-color: #ecf0f1;
+}
+
+.about-section,
+.skills-section,
+.projects-section,
+.publications-section,
+.certifications-section,
+.interests-section,
+.contact-section {
+    background-color: #f7f9fa;
+    border-bottom: 1px solid #ddd;
 }
 
 .animated-heading {
