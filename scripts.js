@@ -12,3 +12,8 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
         });
     });
 });
+
+function toggleMenu() {
+    const nav = document.querySelector('nav ul');
+    nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+}
